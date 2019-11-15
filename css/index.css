@@ -40,7 +40,7 @@ body {
 }
 
 .tryButton2 {
-    width: 50%;
+    width: 60%;
     margin-bottom: 2%;
 }
 
@@ -52,16 +52,11 @@ body {
 }
 
 h3 {
-    /* font-size: 35px; */
     font-size: 2.8vw;
-}
-
-.header {
-    border : 2px solid red;
+    font-weight: 700;
 }
 
 .headerNav {
-    /* border : 2px solid blue; */
     display: flex;
     justify-content: space-between;
 }
@@ -98,16 +93,19 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    /* font-size: 2.5em; */
-    font-size: 3.5vw;
-    font-weight: 700;
-    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
 }
 
+#welcomeText h2 {
+    font-size: 4.5vw;
+    font-weight: 700;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+/* Rubrique à propos */
 
 #aboutContainer {
-    /* border: 2px solid yellow; */
     width: 100%;
     display: flex;
     height: 100vh;
@@ -116,7 +114,6 @@ h3 {
 }
 
 .aboutBloc {
-    /* border: 2px solid rebeccapurple; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -143,7 +140,6 @@ h3 {
 }
 
 #aboutPictures {
-    /* border: 2px solid blue; */
     display: flex;
     /* flex-wrap: wrap; */
     width: 70%;
@@ -153,16 +149,17 @@ h3 {
 }
 
 .aboutPixBloc {
-    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 #aboutPictures img{
-    width: 100%;
+    width: 100%; 
     height: auto;
 }
+
+/* Rubrique avantages */
 
 #benefitsContainer {
     height: 100vh;
@@ -173,6 +170,7 @@ h3 {
 }
 
 #benefitsBloc {
+    border: 2px solid blue;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -188,13 +186,14 @@ h3 {
 
 .benefits {
     border: 1px solid white;
-    height: 35vh;
     display: flex;
     align-self: center;
     padding: 15% 10%;
     margin: 3% 0%;
     text-align: justify;
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -204,7 +203,6 @@ footer {
 }
 
 #socialNetwork{
-    border: 4px solid green;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,5 +220,19 @@ footer {
 
 /* RESPONSIVE TABLET */
 
-@media screen and (max-width: 640px)
+@media screen and (max-width: 768px){
+
+    /* #benefitsContainer{
+        height: auto;
+    }
+
+    #benefitsBloc {
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+    } */
+
+}
 
