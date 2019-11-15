@@ -1,0 +1,86 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    background-color: #1C272A;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+}
+
+.header {
+    border : 2px solid red;
+}
+
+.headerNav {
+    /* border : 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.headerNav ul li {
+    margin-right: 2%;
+}
+
+.headerNav a img {
+    width: 55%;
+    /* width: 9vw; */
+}
+
+.button {
+    border : 1px solid white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    padding: 3px 20px;
+    margin: 3%;
+    /* font-size: 1.250em; */
+    font-size: 1.5vw;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    border: 1px solid #F6AE2D ;
+    background: #F6AE2D;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    border: 3px solid purple;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginContainer{
+    border: 3px solid tomato;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginContainer h1{
+    display: flex;
+    align-self: flex-start;
+}
+
+form{
+    width: 90%;
+}
