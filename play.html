@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VOD</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic+SC'> -->
+</head>
+
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="navbar-brand" href="#"><img alt="Brand" src="./images/logoplay.png" id="logo"></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Serie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Film</a>
+        </li>
+        <!-- <li class="nav-item">
+				  <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false"></a>
+				</li> -->
+    </ul>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <!-- <iframe class="pb-video-frame" width="95%" height="500" src="https://www.youtube.com/embed/OItKvc13gws" frameborder="5" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Fifty Shade of Dark</label> -->
+                <video width="100%" height="550" poster="./images/sh13.jpg" controls>
+                    <!-- <iframe class="pb-video-frame" width="95%" height="150" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="5" allowfullscreen></iframe> -->
+                    <source src="video/Star Wars The Rise of Skywalker  Final Trailer.mp4" class="pb-video-frame" type="video/mp4" frameborder="5" allow="fullscreen">
+                    <source src="video/Star Wars The Rise of Skywalker  Final Trailer.ogg" class="pb-video-frame" type="video/ogg">
+                    Your browser does not support the video tag.
+                    <label class="form-control label-warning text-xs-center">Star Wars The Rise of Skywalker</label>
+                </video>
+            </div>
+
+            <div class="col-md-4" id="synop">
+                <h3 class="my-3">Synopsis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis
+                    enim.
+                </p>
+                <!-- <h3 class="my-3">Project Details</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Dolor Sit Amet</li>
+              <li>Consectetur</li>
+              <li>Adipiscing Elit</li>
+            </ul> -->
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Suggestions Row -->
+        <h3 class="my-4">Suggestions</h3>
+
+        <div class="row">
+
+            <!-- <div class="col-md-3 col-sm-6 mb-4">
+            	<div class="col-md-3 col-sm-6 mb-4 pb-video">
+                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/OItKvc13gws" frameborder="0" allowfullscreen></iframe>
+                        <label class="form-control label-warning text-xs-center">Fifty Shade of Dark</label>
+                    </div>
+          </div> -->
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <iframe class="pb-video-frame videoFrame" width="95%" height="150" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="5" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Star Wars 9</label>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <iframe class="pb-video-frame videoFrame" width="95%" height="150" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="5" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Star Wars 9</label>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <iframe class="pb-video-frame videoFrame" width="95%" height="150" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="5" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Star Wars 9</label>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <footer class="base">
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="anchor">
+            <div class="ident1"><i class="fas fa-heart pulse" style="color:tomato"></i></div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/vod.js"></script>
+</body>
+
+</html>
