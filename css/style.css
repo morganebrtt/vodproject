@@ -130,10 +130,9 @@ GALLERY VIDEO */
     margin-bottom: 25px;
 }
 
-.row {
-    /* width: 100%; */
+/* .row {
     margin-top: 55px;
-}
+} */
 
 #synop {
     border: 1px solid goldenrod;
@@ -495,19 +494,20 @@ footer p{
     text-align: justify;
 }
 
-/* LOGIN PAGE */
+/* LOGIN & REGISTER PAGE */
 
-#loginContainer {
+.formContainer {
+    /* border: 3px solid purple; */
     height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#loginBox{
+.formBox{
     box-shadow: 15px 0px 0px 0px rgba(231,166,26,1);
+    /* border: 1px solid white; */
     height: 70vh;
-    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -515,20 +515,62 @@ footer p{
     background: rgba(28, 39, 42, 0.8);
 }
 
-#loginBox h1{
+.formBox h1{
     display: flex;
     align-self: flex-start;
     font-size: 2.8vw;
     font-weight: 700;
+    /* margin-left: 5%; */
 }
 
-form{
+.formBox form{
+    /* border: 4px solid tomato; */
     height: 55vh;
-    width: 75%;
+    /* margin: 0 5% 0% 5%; */
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.formBox form label{
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.formBox form input{
+    font-size: 1.3vw;
+    /* border: none; */
+    background: none;
+}
+
+.formBox .button{
+    display: flex;
+    align-self: center;
+}
+
+#loginBox{
+    width: 30vw;
+}
+
+#loginBox h1{
+    margin-left: 10%;
+}
+
+#loginBox form{
+    width: 80%;
+}
+
+#registerBox{
+    width: 60vw;
+}
+
+#registerBox h1{
+    margin-left: 5%;
+}
+
+#registerBox form{
+    width: 90%;
 }
 
 
