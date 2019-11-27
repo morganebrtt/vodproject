@@ -1,8 +1,14 @@
+body {
+    background-color: #1C272A;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+}
+
 #listingBody {
     margin: 0px;
     padding: 0px;
     display: flex;
-    background-color: #1C272A;
     flex-wrap: wrap;
     /* border: 8px goldenrod solid; */
     font-family: 'Open sans';
@@ -12,6 +18,16 @@
 #logo {
     width: 50%;
     margin-bottom: 40px;
+}
+
+.navbar-brand {
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navbar-brand:hover {
+    background: black;
 }
 
 .nav-tabs {
@@ -25,9 +41,22 @@
     margin: 15px;
 }
 
+#video-carousel-example2 {
+    width: 100% !important;
+}
+
+#carousel-v {
+    border: 5px solid black;
+    /* margin-left: 5px;
+  margin-right: 5px; */
+}
 
 .nav-tabs .nav-link.active {
-    background-color: black;
+    /* background-color: black; */
+}
+
+img {
+    border-radius: 5px;
 }
 
 #carousel01 {
@@ -36,10 +65,12 @@
 }
 
 .container-fluid {
-    flex-direction: column;
+    /* flex-direction: column; */
     /* border: 2px goldenrod solid; */
     /* background-image: url(../images/black_denim.png); */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0 auto;
     padding: 15px;
     /* border-radius: 10px; */
@@ -85,15 +116,22 @@
 }
 
 .picmg {
+    background: darkgoldenrod;
     margin: -21px;
+    /* border: 1px solid goldenrod; */
+    /* max-width: 370px; */
+    /* width: 100%;
+    height: 300px; */
     margin-bottom: 0px;
-    width: 285px;
-    height: 250px;
-    border-radius: 10px;
+    /* margin-top: 25px; */
+    /* border-radius: 10px; */
+    /* padding: 6px; */
+    width: 275px;
+    height: 300px;
 }
 
 
-/* 
+/*
 GALLERY VIDEO */
 
 .pb-video-container {
@@ -132,7 +170,7 @@ GALLERY VIDEO */
 
 .row {
     /* width: 100%; */
-    margin-top: 55px;
+    margin-top: 15px;
 }
 
 #synop {
@@ -146,14 +184,16 @@ GALLERY VIDEO */
 /* FOOTER */
 
 .base {
+    /* flex-direction: row; */
     background: #101925;
     width: 100%;
     height: 250px;
     margin-top: 15px;
+    /* max-height: 150px; */
     color: #FFF;
+    display: flex;
+    justify-content: center;
 }
-
-/* Button "Haut de page" */
 
 #myBtn:hover {
     background-color: #04065f;
@@ -166,8 +206,10 @@ GALLERY VIDEO */
     color: #FFF;
     cursor: pointer;
     display: none;
+    /* border-radius: 4px; */
     font-size: 18px;
     font-weight: 900;
+    /*     outline:focus; */
     position: fixed;
     right: 30px;
     width: 60px;
@@ -199,8 +241,11 @@ div.ident a {
     background-color: transparent;
     width: 250px;
     height: 300px;
+    /* border: 1px solid goldenrod; */
     perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
+
 
 /* This container is needed to position the front and back side */
 
@@ -209,15 +254,17 @@ div.ident a {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 3s;
+    transition: transform 4s;
     transform-style: preserve-3d;
 }
+
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
 }
+
 
 /* Position the front and back side */
 
@@ -233,6 +280,7 @@ div.ident a {
 /* Style the front side */
 
 .flip-box-front {
+    /* background-color: goldenrod; */
     color: black;
 }
 
@@ -240,6 +288,8 @@ div.ident a {
 /* Style the back side */
 
 .flip-box-back {
+    /* background-color: dodgerblue; */
+    /* background-image: url(../images/black_denim.png); */
     color: white;
     transform: rotateY(180deg);
 }
@@ -248,27 +298,33 @@ div.ident a {
     margin-top: 70px;
 }
 
-.row div {
-    margin: 0 auto;
-
+.fas {
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5px;
 }
+
+.row div {
+    /* width: 506px; */
+    margin: 0 auto;
+    /* border: 1px solid #101925; */
+    /* background: goldenrod; */
+}
+
+
+/* FILTRE */
 
 * {
-    margin : 0;
-    padding : 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 /* COMMUN */
 
-body {
-    background-color: #1C272A;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3vw;
-}
-
 .button {
-    border : 1px solid white;
+    border: 1px solid white;
     background: none;
     border-radius: 50px;
     display: flex;
@@ -283,7 +339,7 @@ body {
 
 .button:hover {
     /* border: 1px solid #F6AE2D ; */
-    border: 1px solid transparent ;
+    border: 1px solid transparent;
     background: #F6AE2D;
     transition: 0.2s;
     /* box-shadow: 0 1px 6px 0 rgba(225,225,225), 0 1px 2px 0 rgba(225,225,225); */
@@ -311,7 +367,7 @@ body {
     margin-right: 10%;
 }
 
-.submitButton{
+.submitButton {
     width: 60%;
 }
 
@@ -319,6 +375,7 @@ h3 {
     font-size: 2.8vw;
     font-weight: 700;
 }
+
 
 /* Header */
 
@@ -346,6 +403,7 @@ h3 {
     width: 9vw;
 }
 
+
 /* Footer */
 
 footer {
@@ -355,11 +413,11 @@ footer {
     height: 15vh;
 }
 
-footer p{
+footer p {
     margin-left: 4%;
 }
 
-#socialNetwork{
+#socialNetwork {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -367,21 +425,23 @@ footer p{
     margin-right: 4%;
 }
 
-#socialNetwork a{
+#socialNetwork a {
     text-decoration: none;
 }
 
-#socialNetwork a img{
+#socialNetwork a img {
     width: 2.3vw;
 }
 
+
 /* INDEX PAGE */
+
 
 /* Index - Header accueil */
 
 #welcomeHeader {
     background-image: url("../images/moviebackground.jpg");
-    background-size: cover;    
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -401,8 +461,8 @@ footer p{
     font-weight: 700;
     text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
     text-align: center;
-
 }
+
 
 /* Index - Rubrique à propos */
 
@@ -424,7 +484,7 @@ footer p{
 #aboutText {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
     width: 70%;
     height: 80vh;
@@ -432,19 +492,19 @@ footer p{
     margin-left: 5%;
 }
 
-#aboutText h3{
+#aboutText h3 {
     margin-left: 4%;
- }  
+}
 
-#aboutText p{
+#aboutText p {
     margin: 0 10%;
 }
 
 #aboutPictures {
     display: flex;
     width: 70%;
-    height: 80vh; 
-    box-shadow: 20px 0px 0px 0px rgba(246,174,45,1);
+    height: 80vh;
+    box-shadow: 20px 0px 0px 0px rgba(246, 174, 45, 1);
     margin-right: 5%;
 }
 
@@ -454,10 +514,11 @@ footer p{
     justify-content: center;
 }
 
-#aboutPictures img{
-    width: 100%; 
+#aboutPictures img {
+    width: 100%;
     height: auto;
 }
+
 
 /* Index - Rubrique avantages */
 
@@ -475,15 +536,15 @@ footer p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: -18px 0px 0px 0px rgba(246,174,45,1);
+    box-shadow: -18px 0px 0px 0px rgba(246, 174, 45, 1);
 }
 
 .benefitsBox {
-    width : 25%;
+    width: 25%;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;   
+    justify-content: space-around;
 }
 
 .benefits {
@@ -495,6 +556,7 @@ footer p{
     text-align: justify;
 }
 
+
 /* LOGIN PAGE */
 
 #loginContainer {
@@ -504,8 +566,8 @@ footer p{
     align-items: center;
 }
 
-#loginBox{
-    box-shadow: 15px 0px 0px 0px rgba(231,166,26,1);
+#loginBox {
+    box-shadow: 15px 0px 0px 0px rgba(231, 166, 26, 1);
     height: 70vh;
     width: 30%;
     display: flex;
@@ -515,14 +577,14 @@ footer p{
     background: rgba(28, 39, 42, 0.8);
 }
 
-#loginBox h1{
+#loginBox h1 {
     display: flex;
     align-self: flex-start;
     font-size: 2.8vw;
     font-weight: 700;
 }
 
-form{
+form {
     height: 55vh;
     width: 75%;
     display: flex;
@@ -532,8 +594,8 @@ form{
 }
 
 
-
 /* RESPONSIVE TABLET */
+
 
 /* @media screen and (max-width: 768px){
 
@@ -550,5 +612,3 @@ form{
     } 
 
 } */
-
-

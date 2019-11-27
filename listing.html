@@ -4,743 +4,160 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>VOD</title>
+    <title>VODPROD</title>
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic+SC'> -->
+    <!-- FONTAWOSOME -->
+    <script src="https://kit.fontawesome.com/1e1282f3cf.js"></script>
+
 </head>
 
 <body id="listingBody">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="navbar-brand" href="#"><img alt="Brand" src="./images/logoplay.png" id="logo"></a>
-        </li>
 
-        <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Accueil</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Serie</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Film</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false"></a>
-        </li>
-    </ul>
 
-    <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>VODPROD</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Carousel -->
-    <div class="container-fluid">
+    <section id="carousel-v" class="container-fluid">
+        <!--Carousel Wrapper-->
+        <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+                <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+                <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <!--Mask color-->
+                    <div class="view">
+                        <!--Video source-->
+                        <video class="video-fluid" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+          </video>
+                        <div class="mask rgba-indigo-light"></div>
+                    </div>
 
-        <section class="tvshow">
-            <!-- <h3>Show 1</h3> -->
-            <video width="100%" height="800" poster="images/sh1.png" controls>
-				<!-- <iframe class="pb-video-frame" width="95%" height="150" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="5" allowfullscreen></iframe> -->
-				<source src="video/Legends Never Die _ Avengers_ Endgame.mp4" type="video/mp4">
+                    <!--Caption-->
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h3 class="h3-responsive">Light mask</h3>
+                        </div>
+                    </div>
+                    <!--Caption-->
+                </div>
+                <!-- /.First slide -->
+
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <!--Video source-->
+                        <video class="video-fluid" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+          </video>
+                        <div class="mask rgba-purple-slight"></div>
+                    </div>
+
+                    <!--Caption-->
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h3 class="h3-responsive">Super light mask</h3>
+                        </div>
+                    </div>
+                    <!--Caption-->
+                </div>
+                <!-- /.Second slide -->
+
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <!--Video source-->
+                        <video class="video-fluid" auto loop muted>
+            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+          </video>
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+
+                    <!--Caption-->
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h3 class="h3-responsive">Strong mask</h3>
+                        </div>
+                    </div>
+                    <!--Caption-->
+                </div>
+                <!-- /.Third slide -->
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--Carousel Wrapper-->
+        <!-- <section class="tvshow">
+            <video width="100%" height="800" poster="images/sh1.png" controls> -->
+        <!-- <iframe class="pb-video-frame" width="95%" height="150" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="5" allowfullscreen></iframe> -->
+        <!-- <source src="video/Legends Never Die _ Avengers_ Endgame.mp4" type="video/mp4">
 				<source src="movie.ogg" type="video/ogg">
 				Your browser does not support the video tag.
 			</video>
-        </section>
-
-    </div>
-    <!-- <div class="container-fluid" id="carousel01">
-	        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-items-xs="1">
-	                <div class="carousel-inner">
-	                  <div class="carousel-item active">
-	                    <img src="images/sh14.jpg" class="d-block w-100" alt="...">
-	                  </div>
-	                  <div class="carousel-item">
-	                    <img src="images/sh1.png" class="d-block w-100" alt="...">
-	                  </div>
-	                  <div class="carousel-item">
-	                    <img src="images/sh6.jpg" class="d-block w-100" alt="...">
-	                  </div>
-	                </div>
-	                <a class="carousel-control-prev" href="#carouselExamplexControls" role="button" data-slide="prev">
-	                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-	                  <span class="sr-only">Previous</span>
-	                </a>
-	                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-	                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	                  <span class="sr-only">Next</span>
-	                </a>
-	              </div>
-			</div> -->
-
-    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img src="images/sh1.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="images/sh6.jpg" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="images/sh14.jpg" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="images/sh11.jpg" class="d-block w-100" alt="...">
-					  </div>
-					</div>
-					<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Next</span>
-					</a>
-				  </div> -->
+    </section> -->
+    </section>
 
 
-    <!-- <div class="container-fluid"> -->
-    <!-- <div class="col-md-10 offset-md-1">
-            <h3 class="text-xs-center">Catalogue </h3>
-            <div class="row pb-row">
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/7eWX9GGbMDw" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Sully</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/DpNJdR9-B8A" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Very BAd Trip</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/R6CPT5o85pQ" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Le Nouveau Stagiaire</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/eytHECz-cNw" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Beauté Cachée</label>
-                </div>
-            </div>
-            <div class="row pb-row">
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Star Wars 9</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/qku_cEgr39A" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Avengers: End Game</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/XL3yX5L4-68" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Un Prince à New York</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/OItKvc13gws" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Fifty Shade of Dark</label>
-                </div>
-            </div>
-            <div class="row pb-row">
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/x0IM35BtPkw" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Star Wars 9</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/Nbn35yCrV3Y" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Blood Shot</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/XL3yX5L4-68" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Un Prince à New York</label>
-                </div>
-                <div class="col-md-3 pb-video">
-                    <iframe class="pb-video-frame videoFrame" width="100%" height="230" src="https://www.youtube.com/embed/OItKvc13gws" frameborder="0" allowfullscreen></iframe>
-                    <label class="form-control label-warning text-xs-center">Fifty Shade of Dark</label>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="col-md4">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
 
-                        <img class="picmg" class="picture" src="images/sh5.jpg" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
+    <section id="all-category" class="container-fluid">
 
-                        <img class="picmg" class="picture" src="images/sh1.png" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-
-                        <img class="picmg" class="picture" src="images/media3.jpg" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-
-                        <img class="picmg" class="picture" src="images/sh2.jpg" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- </div> -->
-    <!-- <div class="col-md4">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-
-                        <img class="picmg" class="picture" src="images/sh5.jpg" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-
-                        <img class="picmg" class="picture" src="images/sh1.png" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-
-                        <img class="picmg" class="picture" src="images/media3.jpg" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-
-                        <img class="picmg" class="picture" src="images/sh2.jpg" alt="actors">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Synopsis</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
-            </div>
-        </div> -->
+    </section>
 
 
-    <!-- <div class="container-fluid">
-            <div class="col-md4">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                           
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md4">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            
-                            <img class="picmg" class="picture" src="images/sh12.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md4">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            
-                            <img class="picmg" class="picture" src="images/media1.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md4">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                         
-                            <img class="picmg" class="picture" src="images/sh13.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
+    <section id="previsual" class="container-fluid">
+
+    </section>
 
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh11.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh14.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh5.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media3.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- deuxième rangée -->
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh12.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh7.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh1.png" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh13.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- troixième rang -->
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh11.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh14.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh5.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media3.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- quatrième rangée -->
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh12.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh7.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh1.png" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh13.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media1.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media2.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- </div> -->
-
-    <!-- <div class="row">
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh12.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media1.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media2.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-    <!-- <div class="container-fluid"> -->
-    <!-- <div class="row">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh10.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh12.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/media1.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img class="picmg" class="picture" src="images/sh13.jpg" alt="actors">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Synopsis</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                    </div>
-                </div> -->
-    <!-- </div> -->
-
-
-    </div>
 
     <footer class="base">
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <div class="anchor">
-            <div class="ident1"><i class="fas fa-heart" style="color:tomato"></i></div>
+            <div class="ident1">Made with <i class="fas fa-heart" style="color:tomato"></i></div>
 
         </div>
     </footer>
@@ -750,11 +167,14 @@
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/vod.js"></script>
+    <script type="text/javascript" src="js/script.js">
+    </script>
 
 </body>
 
