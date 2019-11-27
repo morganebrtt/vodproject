@@ -310,10 +310,6 @@ body {
     margin-right: 10%;
 }
 
-.submitButton{
-    width: 60%;
-}
-
 h3 {
     font-size: 2.8vw;
     font-weight: 700;
@@ -512,7 +508,8 @@ footer p{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: rgba(28, 39, 42, 0.8);
+    width: 30vw;
+    /* background: rgba(28, 39, 42, 0.8); */
 }
 
 .formBox h1{
@@ -531,6 +528,7 @@ footer p{
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     /* align-items: center; */
+    width: 80%;
 }
 
 .formBox form label{
@@ -540,37 +538,12 @@ footer p{
 
 .formBox form input{
     font-size: 1.3vw;
-    /* border: none; */
     background: none;
 }
 
 .formBox .button{
     display: flex;
     align-self: center;
-}
-
-#loginBox{
-    width: 30vw;
-}
-
-#loginBox h1{
-    margin-left: 10%;
-}
-
-#loginBox form{
-    width: 80%;
-}
-
-#registerBox{
-    width: 60vw;
-}
-
-#registerBox h1{
-    margin-left: 5%;
-}
-
-#registerBox form{
-    width: 90%;
 }
 
 

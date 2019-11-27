@@ -28,20 +28,18 @@
 
     <main>
         <section class="formContainer">
-            <section id="loginBox" class="formBox">
+            <section class="formBox">
                 <h1>S'identifier</h1>
-                <form>
-                        <div class="form-group">
-                        <label for="exampleInputEmail1">E-mail</label>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">E-mail ou Nom d'utilisateur</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Saissisez votre adresse e-mail">
-                        </div>
-                        <div class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleInputPassword1">Mot de passe</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Saisissez votre mot de passe">
-                        </div>
-                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                        <button type="submit" class="button submitButton">Connexion</button>
-
+                    </div>
+                    <button type="submit" id="loginButton" class="button">Connexion</button>
                     </form>
             </section>
         </section>
