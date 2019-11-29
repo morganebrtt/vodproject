@@ -46,7 +46,8 @@ body {
 }
 
 #carousel-v {
-    border: 5px solid black;
+    margin-bottom: 25px;
+    /* border: 5px solid black; */
     /* margin-left: 5px;
   margin-right: 5px; */
 }
@@ -303,6 +304,15 @@ div.ident a {
     justify-content: center;
     align-items: flex-start;
     margin-right: 5px;
+}
+
+.fa-reply-all:before {
+    /* content: "\f122"; */
+    font-size: 1.5rem;
+    padding: 16px;
+    margin-left: 0px;
+    color: tomato;
+    background: black;
 }
 
 .row div {

@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
     // console.log('clicked');
-    jQuery.ajax({
+    $.ajax({
         url: 'https://brianboudrioux.fr/simplon/api/categories',
         dataType: 'json',
         type: 'GET',
@@ -60,6 +60,8 @@ $(document).ready(function() {
     // })
 
     $('#all-category').on('click', '.row', function() {
+
+        $('#all-category').hide();
         let categoryId = $(this).data("id");
         console.log(categoryId);
 
@@ -77,28 +79,28 @@ $(document).ready(function() {
                 function(index, value) {
 
 
-                    // console.log(value.name);
-                    // let container = $('#previsual');
-                    // let row = $('<article class="row"></article>').attr('data-id', value._id);
-                    // let col = $('<div class="col"></div>');
-                    // let flipbox = $('<div class="flip-box"></div>');
-                    // let flipBoxInner = $('<div class="flip-box-inner"></div>');
-                    // let flipBoxFront = $('<div class="flip-box-front"></div>');
-                    // let img = $('<img class="picmg" src="' + value.picture + '" />');
-                    // let flipBoxBack = $('<article class="flip-box-back"></article>');
-                    // let h2 = $('<h2 class="synopsis"></h2>');
-                    // let playBtn = $('<i class="fas fa-play-circle fa-3x"></i><br>');
-                    //
-                    // $(h2).append(playBtn);
-                    // $(col).append(flipbox);
-                    // $(flipBoxFront).append(img);
-                    // $(flipBoxInner).append(flipBoxFront);
-                    // $(flipBoxFront).after(flipBoxBack);
-                    // $(flipBoxBack).append(h2);
-                    // $(h2).append(value.description);
-                    // $(flipbox).append(flipBoxInner);
-                    // $(row).append(col);
-                    // $(container).append(row);
+                    console.log(value.name);
+                    let container = $('#previsual');
+                    let row = $('<article class="row"></article>').attr('data-id', value._id);
+                    let col = $('<div class="col"></div>');
+                    let flipbox = $('<div class="flip-box"></div>');
+                    let flipBoxInner = $('<div class="flip-box-inner"></div>');
+                    let flipBoxFront = $('<div class="flip-box-front"></div>');
+                    let img = $('<img class="picmg" src="' + value.picture + '" />');
+                    let flipBoxBack = $('<article class="flip-box-back"></article>');
+                    let h2 = $('<h2 class="synopsis"></h2>');
+                    let playBtn = $('<i class="fas fa-play-circle fa-3x"></i><br>');
+
+                    $(h2).append(playBtn);
+                    $(col).append(flipbox);
+                    $(flipBoxFront).append(img);
+                    $(flipBoxInner).append(flipBoxFront);
+                    $(flipBoxFront).after(flipBoxBack);
+                    $(flipBoxBack).append(h2);
+                    $(h2).append(value.description);
+                    $(flipbox).append(flipBoxInner);
+                    $(row).append(col);
+                    $(container).append(row);
 
                 })
         })
