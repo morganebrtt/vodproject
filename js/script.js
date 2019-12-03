@@ -27,7 +27,7 @@ $(document).ready(function() {
                     let img = $('<img class="picmg" src="' + value.picture + '" />');
                     let flipBoxBack = $('<article class="flip-box-back"></article>');
                     let h2 = $('<h2 class="synopsis"></h2>');
-                    let playBtn = $('<i class="fas fa-play-circle fa-3x"></i><br>');
+                    let playBtn = $('<button><i class="fas fa-list-alt"></i>Plus de Choix</button><br>');
 
                     $(h2).append(playBtn);
                     $(col).append(flipbox);
@@ -67,7 +67,7 @@ $(document).ready(function() {
 
         const urlCategory = 'https://brianboudrioux.fr/simplon/api/products/category/' + categoryId;
 
-        jQuery.ajax({
+        $.ajax({
             url: urlCategory,
             dataType: 'json',
             type: 'GET',
@@ -89,7 +89,7 @@ $(document).ready(function() {
                     let img = $('<img class="picmg" src="' + value.picture + '" />');
                     let flipBoxBack = $('<article class="flip-box-back"></article>');
                     let h2 = $('<h2 class="synopsis"></h2>');
-                    let playBtn = $('<i class="fas fa-play-circle fa-3x"></i><br>');
+                    let playBtn = $('<button><i class="fas fa-video"></i>Lancer la Video</button><br><br>');
 
                     $(h2).append(playBtn);
                     $(col).append(flipbox);
